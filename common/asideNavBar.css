@@ -1,0 +1,71 @@
+
+/*part.n 侧边栏*/
+body > aside.rightbar{
+	width: 35px;
+	/*js 设置高*/
+	background-color: #000;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 1500;
+	box-sizing: border-box;
+	padding-top: 80px;
+	color: #fff;
+}
+.rightbar>ul{
+	width: 35px;
+	background-color: #000;
+}
+.rightbar li{
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+.rightbar>ul.rightbar-cont{
+	position: relative;
+	z-index: 1;
+}
+.rightbar li:hover{
+	background-color: #ff0036;
+}
+.rightbar-cont>li.setborder{
+	height: 102px;
+	margin: 5px 5px 15px 0;
+}
+.setborder>div{
+	width: 25px;
+	height: 75px;
+	margin-left: 5px;
+	padding: 10px 0 15px;
+	border: 1px solid #999;
+	border-left: 0;
+	border-right: 0;
+}
+.setborder>div>span{
+	display: inline-block;
+	width: 20px;
+}
+.setborder>div>img{
+	width: 25px;
+}
+.setborder>div>img.cart2{
+	display: none;
+}
+.setborder:hover>div{
+	border-color: #ff0036;
+}
+.setborder:hover>div>img.cart1{
+	display: none;
+}
+.setborder:hover>div>img.cart2{
+	display: block;
+}
+.rightbar > ul.rightbar-func{
+	position: absolute;
+	bottom: 0;
+}
+.rightbar-func > li{
+	background-repeat: no-repeat;
+	margin-bottom: 0;
+}

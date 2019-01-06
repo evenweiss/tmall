@@ -1,0 +1,782 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>笔记本-天猫Tmall.com-理想生活上天猫</title>
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/list/base-list.css">
+	<link rel="stylesheet" href="assets/css/list/list.css">
+	<link rel="stylesheet" href="assets/css/list/iconfont.css">
+	<script src="assets/js/iconfont.js"></script>
+	<script src="assets/js/jquery-1.8.3.min.js"></script>
+	<script src="assets/js/list.js"></script>
+</head>
+<body>
+	<!-- part.1 页首 导航区 -->
+	<header id="top-nav">
+		<nav class="nav-wrap area">
+			<section class="homepage fl">
+				<!-- js 添加右外边距 -->
+				<p class="fl">
+					<i class="iconfont icon-homepage-red"></i>
+					<a href="">天猫首页</a>
+				</p>
+				<span>喵，欢迎来天猫</span>
+				<a href="login.html">请登录</a>
+				<a href="register.html">免费注册</a>
+			</section>
+			<aside class="quick-access fr">
+				<ul id="quick-menu">
+					<!-- menu.1 我的淘宝 -->
+					<li class="mytb haslist">
+						<a href="">
+							我的淘宝
+							<span id="iconbymarks-2down"></span>
+						</a>
+						<!-- unit.2 下拉列表内容 -->
+						<div class="navlist mytb-list">
+							<p><a href="">已买到的宝贝</a></p>
+							<p><a href="">已卖出的宝贝</a></p>
+						</div>
+					</li>
+					<li class="mycart seticonfont">
+						<i class="iconfont icon-gouwuche01"></i>
+						<a href="">购物车 <b>0</b> 件</a>
+					</li>
+					<!-- menu.3 收藏夹 -->
+					<li class="favorite haslist">
+						<a href="">收藏夹
+						<span id="iconbymarks-2down"></span></a>
+						<!-- unit.2 下拉列表内容 -->
+						<div class="navlist favorite-list">
+							<p><a href="">收藏的宝贝</a></p>
+							<p><a href="">收藏的店铺</a></p>
+						</div>
+					</li>
+					<li class="divide"></li>
+					<!-- menu.4 手机版 -->
+					<li class="verphone seticonfont">
+						<i class="iconfont icon-iconfontshouji"></i>
+						<a href="">手机版</a>
+						<!-- unit.2 下拉列表内容 -->
+						<div class="navlist phone-list">
+							<div class="qrcode"></div>
+							<div class="qrcode-text"></div>
+							<span id="iconbymarks-2up"></span>
+						</div>
+					</li>
+					<!-- menu.5 淘宝网链接 -->
+					<li class="tbw">
+						<a href="">淘宝网</a>
+					</li>
+					<!-- menu.6 商家支持 -->
+					<li class="support haslist">
+						<a href="">商家支持
+						<span id="iconbymarks-2down"></span></a>
+						<!-- unit.2 下拉列表内容 -->
+						<div class="navlist support-list">
+							<!-- -module-top -->
+							<div class="clearfix">
+								<h3>商家：</h3>
+								<a href="">商家中心</a>
+								<a href="">天猫规则</a>
+								<a href="">商家入驻</a>
+								<a href="">运营服务</a>
+								<a href="">商家品控</a>
+								<a href="">商家工具</a>
+								<a href="">天猫智库</a>
+								<a href="">喵言喵语</a>
+							</div>
+							<div class="divide"></div>
+							<!-- -module-btm -->
+							<div class="clearfix">
+								<h3>帮助</h3>
+								<a href="">帮助中心</a>
+								<a href="">问商友</a>
+							</div>
+							<div class="divide"></div>
+						</div>
+					</li>
+					<!-- menu.7 网站导航 -->
+					<li class="sitenav haslist seticonfont">
+						<a href=""><i class="iconfont icon-liebiao"></i>网站导航
+						<span id="iconbymarks-2down"></span></a>
+						<!-- unit.2 下拉列表内容 -->
+						<div class="navlist sitenav-list">
+							<!-- -module-lt -->
+							<div class="block-lt">
+								<h2>热点推荐 Hot</h2>
+								<ul class="sitelist-lt clearfix">
+									<li><a href="">天猫超市</a></li>
+									<li><a href="">喵鲜生</a></li>
+									<li><a href="">科技新品</a></li>
+									<li><a href="">女装新品</a></li>
+									<li><a href="">酷玩街</a></li>
+									<li><a href="">内衣新品</a></li>
+									<li><a href="">试美妆</a></li>
+									<li><a href="">运动新品</a></li>
+									<li><a href="">时尚先生</a></li>
+									<li><a href="">精明妈咪</a></li>
+									<li><a href="">吃乐会</a></li>
+									<li><a href="">企业采购</a></li>
+									<li><a href="">会员积分</a></li>
+									<li><a href="">天猫国际</a></li>
+									<li><a href="">品质频道</a></li>
+								</ul>
+							</div>
+								<!-- -module-ct -->
+							<div class="block-ct">
+								<h2>行业市场 Market</h2>
+								<ul class="sitelist-ct">
+									<li><a href="">美妆</a></li>
+									<li><a href="">电器</a></li>
+									<li><a href="">女装</a></li>
+									<li><a href="">男装</a></li>
+									<li><a href="">女鞋</a></li>
+									<li><a href="">男鞋</a></li>
+									<li><a href="">内衣</a></li>
+									<li><a href="">箱包</a></li>
+									<li><a href="">运动</a></li>
+									<li><a href="">母婴</a></li>
+									<li><a href="">家装</a></li>
+									<li><a href="">医药</a></li>
+									<li><a href="">食品</a></li>
+									<li><a href="">配饰</a></li>
+									<li><a href="">汽车</a></li>
+								</ul>
+							</div>
+							<div class="block-rt">
+								<h2>服务指南 Help</h2>
+								<ul class="sitelist-rt">
+									<li><a href="">帮助中心</a></li>
+									<li><a href="">品质保障</a></li>
+									<li><a href="">特色服务</a></li>
+									<li><a href="">7天退换货</a></li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</aside>
+		</nav>
+	</header>
+	<!-- part.2 LOGO-搜索区 -->
+	<div class="logo-search area">
+		<!-- module.1 logo -->
+		<img src="assets/images/list/3c_tmall.png" alt="">
+		<div class="search-wrap">
+			<!-- module.2 搜索框 -->
+			<form action="">
+				<input type="text" name="goods-search" value="搜索 天猫 商品/品牌/店铺" id="search">
+				<button id="btn-search">搜索</button>
+			</form>
+			<!-- module.3 搜索框选项 -->
+			<p>
+				<a href="">飞行堡垒</a>
+				<span>|</span>
+				<a href="">神州</a>
+				<span>|</span>
+				<a href="">机械师</a>
+				<span>|</span>
+				<a href="">小米游戏本</a>
+				<span>|</span>
+				<a href="">戴尔g3</a>
+				<span>|</span>
+				<a href="">暗影精灵4</a>
+				<span>|</span>
+				<a href="">y7000p</a>
+				<span>|</span>
+				<a href="">macbook</a>
+				<span>|</span>
+				<a href="">air</a>
+			</p>
+		</div>
+	</div>
+	<!-- part.3 主导航 -->
+	<nav id="main-nav" class="area">
+		<!-- module.1 总导航 -->
+		<header class="clearfix total-nav">
+			<ul class="navlist">
+				<li><a href="">电器城首页</a></li>
+				<li><a href="">新首发</a></li>
+				<li><a href="">酷玩街</a></li>
+				<li><a href="">花呗分期</a></li>
+				<li><a href="">手机馆</a></li>
+				<li><a href="">苏宁易购</a></li>
+			</ul>
+			<a href="" class="fr">电器城服务台</a>
+		</header>
+		<!-- module.2 检索路径+结果 -->
+		<div class="searched">
+			<section class="search-path a-hover fl">
+				<a href="">首页</a>
+				<span></span>
+				<a href="">笔记本</a>
+				<span></span>
+				<div class="searchbox">
+					<input type="text" value="在当前条件下搜索" class="fl">
+					<!-- js 特效调整value -->
+					<button class="fr"><i class="iconfont icon-search"></i></button>
+				</div>
+				
+			</section>
+			<p class="fr search-result">共 <span>5444</span> 件相关商品</p>
+		</div>
+		<!-- module.3 高级检索 -->
+		<div id="advanced" class="area">
+			<!-- unit.1 品牌brands -->
+			<div class="brands">
+				<p class="advanced-title fl">品牌</p>
+				<aside class="advanced-detail fl">
+					<ul class="brands-list clearfix fl">
+						<!-- js:为li插入背景图;a标签设置样式;ul设置宽度 -->
+						<li><a href="">Asus/华硕</a></li>
+						<li><a href="">Lenovo/联想</a></li>
+						<li><a href="">Asus/华硕</a></li>
+						<li><a href="">Asus/华硕</a></li>
+						<li><a href="">Asus/华硕</a></li>
+						<li><a href="">Asus/华硕</a></li>
+						<li><a href="">Asus/华硕</a></li>
+						<li><a href="">Asus/华硕</a></li>
+						<li><a href="">Asus/华硕</a></li>
+						<li><a href="">Asus/华硕</a></li>
+						<li><a href="">Asus/华硕</a></li>
+						<li><a href="">Asus/华硕</a></li>
+						<li><a href="">Asus/华硕</a></li>
+						<li><a href="">Asus/华硕</a></li>
+						<li><a href="">Asus/华硕</a></li>
+						<li><a href="">Asus/华硕</a></li>
+					</ul>
+					<div class="mult-more fr">
+						<a href="" class="icon-mult">
+							<b></b>
+							<span>多选</span>
+						</a>
+						<a href="" class="icon-more">
+							<span>更多</span>
+							<b></b>
+						</a>
+					</div>
+				</aside>
+			</div>
+			<!-- unit.2 分类type 开始 -->
+			<div class="type brands">
+				<p class="advanced-title fl">分类</p>
+				<aside class="advanced-detail fl">
+					<a href="">笔记本</a>
+					<a href="">游戏本</a>
+					<a href="">轻薄本</a>
+					<a href="">多彩本</a>
+					<a href="">PC平板二合一</a>
+				</aside>
+			</div>
+			<!-- unit.3 适用场所place 开始 -->
+			<div class="place type brands">
+				<p class="advanced-title fl">适用场所</p>
+				<aside class="advanced-detail fl">
+					<a href="">30876.G18</a>
+					<a href="">炒股理财</a>
+					<a href="">尊贵旗舰</a>
+					<a href="">家庭影音</a>
+					<a href="">家庭娱乐</a>
+					<a href="">女性时尚</a>
+					<a href="">移动工作站</a>
+					<a href="">校园学生</a>
+					<a href="">高清游戏</a>
+					<div class="mult-more fr">
+						<a href="" class="icon-mult">
+							<b></b>
+							<span>多选</span>
+						</a>
+						<a href="" class="icon-more">
+							<span>更多</span>
+							<b></b>
+						</a>
+					</div>
+				</aside>
+			</div>
+			<!-- unit.4 荧幕尺寸screen 同 适用场所place -->
+			<div class="place type brands">
+				<p class="advanced-title fl">荧幕尺寸</p>
+				<aside class="advanced-detail fl">
+					<a href="">11.6英寸</a>
+					<a href="">13.3英寸</a>
+					<a href="">14英寸</a>
+					<a href="">15.6英寸</a>
+					<a href="">17.3英寸</a>
+					<a href="">12.5英寸</a>
+					<a href="">15英寸</a>
+					<a href="">13英寸</a>
+					<a href="">12英寸</a>
+					<a href="">17英寸</a>
+					<div class="mult-more fr">
+						<a href="" class="icon-mult">
+							<b></b>
+							<span>多选</span>
+						</a>
+						<a href="" class="icon-more">
+							<span>更多</span>
+							<b></b>
+						</a>
+					</div>
+				</aside>
+			</div>
+			<!-- unit.5 笔记本cpu 同 适用场所place -->
+			<div class="place type brands">
+				<p class="advanced-title fl">笔记本CPU</p>
+				<aside class="advanced-detail fl">
+					<a href="">英特尔 酷睿 i5-8250U</a>
+					<a href="">英特尔 酷睿 i7-8750H</a>
+					<a href="">英特尔 酷睿 i7-8550U</a>
+					<a href="">英特尔 酷睿 i5-7200U</a>
+					<a href="">英特尔 酷睿 i5-8300H</a>
+					<div class="mult-more fr">
+						<a href="" class="icon-mult">
+							<b></b>
+							<span>多选</span>
+						</a>
+						<a href="" class="icon-more">
+							<span>更多</span>
+							<b></b>
+						</a>
+					</div>
+				</aside>
+			</div>
+		</div>
+		<!-- module.4 更多选项 -->
+		<footer class="more-opts">
+			<div class="icon-more">
+				<span>更多选项</span>
+				<b></b>
+			</div>
+		</footer>
+	</nav>
+	<!-- part.4 筛选filter -->
+	<div id="filter">
+		<div class="inner-wrap">
+			<!-- unit.1 排序sort -->
+			<ul id="sort" class="clearfix">
+				<li id="default" class="active checked">综合<b class="iconpic-arrow2Btm"></b></li>
+				<li>人气<b class="iconpic-arrow2Btm"></b></li>
+				<li>新品<b class="iconpic-arrow2Btm"></b></li>
+				<li>销量<b class="iconpic-arrow2Btm"></b></li>
+				<li class="atPrice">价格
+					<b class="iconbymarks-tri2Top"></b>
+					<b class="iconbymarks-tri2Btm"></b>
+				</li>
+			</ul>
+			<!-- unit.2 收货地addr -->
+			<ul id="addr" class="clearfix">
+				<!-- cell.1 标题title -->
+				<li class="title">收货地:</li>
+				<li class="select">
+					<div class="showText">北京</div>
+					<b class="iconbymarks-tri2rb"></b>
+					<div></div>
+				</li>
+			</ul>
+			<!-- unit.3 价格区间setPrice -->
+			<ul id="setPrice">
+				<li><span>&yen;</span><input type="text" placeholder="请输入最低价"></li>
+				<li class="divide">-</li>
+				<li><span>&yen;</span><input type="text" placeholder="请输入最高价"></li>
+			</ul>
+			<!-- unit.4 视图viewType -->
+			<ul id="viewType" class="clearfix">
+				<li><b class="iconpic-shop"></b>店铺</li>
+				<li id="default" class="active checked"><b class="iconpic-lgpic"></b>大图</li>
+			</ul>
+			<!-- unit.5 右侧翻页toPage -->
+			<aside id="toPage" class="fr">
+				<p><span class="firstChild"></span>/<span class="lastChild"></span></p>
+				<i class="iconfont icon-zuo"></i>
+				<i class="iconfont icon-you"></i>
+			</aside>
+		</div>
+	</div>
+	<!-- part.5 瀑布流waterfall -->
+	<div id="waterfall" class="area">
+		<ul id="wf-cont" class="clearfix">
+			<li>
+				<div class="cell">
+					<a href="" class="anchor-img"><img src="assets/images/list/list-waterfall/1.jpg" alt=""></a>
+					<p>&yen; 5599.00</p>
+					<p>3期免息</p>
+					<p class="a-hover">
+						<a href="">Lenovo/联想 拯救者 R720-15IKB</a>
+						<a href="">NVIDIA GeForce GTX1050 </a>
+					</p>
+					<!-- cell.5 店铺名 -->
+					<p class="a-hover">
+						<a href="">联想艾克兰斯专卖店</a>
+						<a href="">等更多商家 <b class="iconbymarks-circlebox">></b></a>
+					</p>
+					<!-- cell.6 底部售出数量 -->
+					<div>
+						<p class="fl">该款月成交 <span>1063笔</span></p>
+						<p class="fr"><a href=""><img src="assets/images/list/aliww.png" alt=""></a></p>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="cell">
+					<a href="" class="anchor-img"><img src="assets/images/list/list-waterfall/2.jpg" alt=""></a>
+					<p>&yen; 6499.00</p>
+					<p>3期免息</p>
+					<p class="a-hover">
+						<a href="">Asus/华硕 飞行堡垒 FX i5</a>
+						<a href="">NVIDIA GeForce GTX1050 Ti (Notebook)</a>
+						<a href="">英特尔 酷睿 i5-8300H</a>
+					</p>
+					<!-- cell.5 店铺名 -->
+					<p class="a-hover">
+						<a href="">asus华硕官方旗舰店</a>
+						<a href="">等更多商家 <b class="iconbymarks-circlebox">></b></a>
+					</p>
+					<!-- cell.6 底部售出数量 -->
+					<div>
+						<p class="fl">该款月成交 <span>3514</span><span>笔</span></p>
+						<p class="fr"><a href=""><img src="assets/images/list/aliww.png" alt=""></a></p>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="cell">
+					<a href="" class="anchor-img"><img src="assets/images/list/list-waterfall/3.jpg" alt=""></a>
+					<p>&yen; 5999.00</p>
+					<p>3期免息</p>
+					<p class="a-hover">
+						<a href="">Lenovo/联想 拯救者 Y7000 15.6</a>
+						<a href="">NVIDIA GeForce GTX1050 Ti (Notebook)</a>
+					</p>
+					<!-- cell.5 店铺名 -->
+					<p class="a-hover">
+						<a href="">联想艾克兰斯专卖店</a>
+						<a href="">等更多商家 <b class="iconbymarks-circlebox">></b></a>
+					</p>
+					<!-- cell.6 底部售出数量 -->
+					<div>
+						<p class="fl">该款月成交 <span>1144笔</span></p>
+						<p class="fr"><a href=""><img src="assets/images/list/aliww.png" alt=""></a></p>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="cell">
+					<a href="" class="anchor-img"><img src="assets/images/list/list-waterfall/4.jpg" alt=""></a>
+					<p>&yen; 4599.00</p>
+					<p>3期免息</p>
+					<p class="a-hover">
+						<a href="">Asus/华硕 u4000 UQ7200</a>
+						<a href="">英特尔 酷睿 i5-8250U</a>
+						<a href="">14英寸</a>
+						<a href="">1TB</a>
+					</p>
+					<!-- cell.5 店铺名 -->
+					<p class="a-hover">
+						<a href="">asus华硕官方旗舰店</a>
+						<a href="">等更多商家 <b class="iconbymarks-circlebox">></b></a>
+					</p>
+					<!-- cell.6 底部售出数量 -->
+					<div>
+						<p class="fl">该款月成交 <span>1359笔</span></p>
+						<p class="fr"><a href=""><img src="assets/images/list/aliww.png" alt=""></a></p>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="cell">
+					<a href="" class="anchor-img"><img src="assets/images/list/list-waterfall/5.jpg" alt=""></a>
+					<p>&yen; 11786.00</p>
+					<p></p>
+					<p class="a-hover">
+						<a href="">Apple/苹果 13 英寸 2.3GHz 处理器 256GB 存储容量 MacBook Pro</a>
+					</p>
+					<!-- cell.5 店铺名 -->
+					<p class="a-hover">
+						<a href="">Apple Store 官方旗舰店</a>
+						<a href="">等更多商家 <b class="iconbymarks-circlebox">></b></a>
+					</p>
+				</div>
+			</li>
+			<li>
+				<div class="cell">
+					<a href="" class="anchor-img"><img src="assets/images/list/list-waterfall/6.jpg" alt=""></a>
+					<p>&yen; 5398.00</p>
+					<p></p>
+					<p class="a-hover">
+						<a href="">Xiaomi/小米 笔记本Pro 15.6英寸</a>
+						<a href="">NVIDIA GeForce MX150</a>
+						<a href="">英特尔 酷睿 i5-8250U</a>
+					</p>
+					<!-- cell.5 店铺名 -->
+					<p class="a-hover">
+						<a href="">小米官方旗舰店</a>
+						<a href="">等更多商家 <b class="iconbymarks-circlebox">></b></a>
+					</p>
+					<!-- cell.6 底部售出数量 -->
+					<div>
+						<p class="fl">该款月成交 <span>1028笔</span></p>
+						<p class="fr"><a href=""><img src="assets/images/list/aliww.png" alt=""></a></p>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="cell">
+					<a href="" class="anchor-img"><img src="assets/images/list/list-waterfall/7.jpg" alt=""></a>
+					<p>&yen; 14188.00</p>
+					<p></p>
+					<p class="a-hover">
+						<a href="">Apple/苹果 触控栏和触控 ID 2.3GHz 处理器 256GB 存储容量 13 英寸 MacBook Pro</a>
+					</p>
+					<!-- cell.5 店铺名 -->
+					<p class="a-hover">
+						<a href="">Apple Store 官方旗舰店</a>
+						<a href="">等更多商家 <b class="iconbymarks-circlebox">></b></a>
+					</p>
+				</div>
+			</li>
+			<li>
+				<div class="cell">
+					<a href="" class="anchor-img"><img src="assets/images/list/list-waterfall/8.jpg" alt=""></a>
+					<p>&yen; 6899.00</p>
+					<p></p>
+					<p class="a-hover">
+						<a href="">Hasee/神舟 战神 ZX6-CP5S</a>
+						<a href="">NVIDIA GeForce GTX1050 Ti (Notebook)</a>
+						<a href="">英特尔 酷睿 i5-8400</a>
+					</p>
+					<!-- cell.5 店铺名 -->
+					<p class="a-hover">
+						<a href="">神舟电脑旗舰店</a>
+						<a href="">等更多商家 <b class="iconbymarks-circlebox">></b></a>
+					</p>
+					<!-- cell.6 底部售出数量 -->
+					<div>
+						<p class="fl">该款月成交 <span>1396笔</span></p>
+						<p class="fr"><a href=""><img src="assets/images/list/aliww.png" alt=""></a></p>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="cell">
+					<a href="" class="anchor-img"><img src="assets/images/list/list-waterfall/9.jpg" alt=""></a>
+					<p>&yen; 6088.00</p>
+					<p></p>
+					<p class="a-hover">
+						<a href="">Apple/苹果 MacBook Air MQD32CH/A </a>
+						<a href="">英特尔 HD Graphics 6000</a>
+						<a href="">(Mac only)英特尔 酷睿 i5 双核处理器</a>
+					</p>
+					<!-- cell.5 店铺名 -->
+					<p class="a-hover">
+						<a href="">卓辰数码旗舰店</a>
+						<a href="">等更多商家 <b class="iconbymarks-circlebox">></b></a>
+					</p>
+					<!-- cell.6 底部售出数量 -->
+					<div>
+						<p class="fl">该款月成交 <span>5321笔</span></p>
+						<p class="fr"><a href=""><img src="assets/images/list/aliww.png" alt=""></a></p>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="cell">
+					<a href="" class="anchor-img"><img src="assets/images/list/list-waterfall/10.jpg" alt=""></a>
+					<p>&yen; 5899.00</p>
+					<p>3期免息</p>
+					<p class="a-hover">
+						<a href="">Dell/戴尔 G3 i5独显</a>
+						<a href="">1050Ti</a>
+						<a href="">i5-8300H</a>
+						<a href="">15.6英寸</a>
+						<a href="" class="setColor">i5-8300H/ 8G/ 128G+1T/ GTX1050Ti</a>
+					</p>
+					<!-- cell.5 店铺名 -->
+					<p class="a-hover">
+						<a href="">戴尔官方旗舰店</a>
+						<a href="">等更多商家 <b class="iconbymarks-circlebox">></b></a>
+					</p>
+					<!-- cell.6 底部售出数量 -->
+					<div>
+						<p class="fl">该款月成交 <span>2153笔</span></p>
+						<p class="fr"><a href=""><img src="assets/images/list/aliww.png" alt=""></a></p>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<!-- jquery 加载瀑布流 -->
+	</div>
+	<!-- part.6 底部搜索区 -->
+	<div class="btm-search area">
+		<form action="" class="btm-form">
+			<input type="text" name="goods-search2">
+			<button id="btn-search">搜索</button>
+		</form>
+	</div>
+	<!-- part.7 用户反馈 -->
+	<p class="feedback area">
+		<b class="iconpic-text"></b>
+		喵~在此反馈您的意见和建议吧，
+		<a href="">立刻反馈</a>
+	</p>
+	<!-- part.8 侧边栏 -->
+	<aside class="rightbar">
+		<!-- js 设置高 -->
+		<ul class="rightbar-cont">
+			<li><img src="assets/images/rightbar-logo.png" alt=""></li>
+			<li class="setborder">
+				<div>
+					<img src="assets/images/rightbar-cart.png" alt="" class="cart1">
+					<img src="assets/images/rightbar-cart2.png" alt="" class="cart2">
+					<span>购物车</span>
+				</div>
+			</li>
+			<li><img src="assets/images/rightbar-dollar.png" alt=""></li>
+			<li><img src="assets/images/rightbar-star.png" alt=""></li>
+			<li><img src="assets/images/rightbar-history.png" alt=""></li>
+			<li><img src="assets/images/rightbar-charge.png" alt=""></li>
+		</ul>
+		<ul class="rightbar-func">
+			<!-- js 插入图片 -->
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</aside>
+	<!-- part.9 底部 -->
+	<footer class="footer">
+		<!-- module.1 上层：天猫承诺 -->
+		<header class="f-top area">
+			<a href=""></a>
+			<a href=""></a>
+			<a href=""></a>
+			<a href=""></a>
+		</header>
+		<!-- module.2 中层：常用链接 -->
+		<div class="f-mid area clearfix">
+			<dl>
+				<dt>购物指南</dt>
+				<dd><a href="">免费注册</a></dd>
+				<dd><a href="">开通支付宝</a></dd>
+				<dd><a href="">支付宝充值</a></dd>
+			</dl>
+			<dl>
+				<dt>电器城保障</dt>
+				<dd><a href="">花呗分期</a></dd>
+				<dd><a href="">预约配送</a></dd>
+				<dd><a href="">送货入户</a></dd>
+				<dd><a href="">全国联保</a></dd>
+			</dl>
+			<dl>
+				<dt>支付方式</dt>
+				<dd><a href="">支付宝快捷支付</a></dd>
+				<dd><a href="">支付宝余额付款</a></dd>
+				<dd><a href="">支付宝钱包付款</a></dd>
+				<dd><a href="">货到付款</a></dd>
+				<dd><a href="">新人支付</a></dd>
+			</dl>
+			<dl>
+				<dt>商家服务</dt>
+				<dd><a href="">入驻天猫电器城</a></dd>
+				<dd><a href="">加入电器城服务保障</a></dd>
+				<dd><a href="">电器城喵言喵语圈子</a></dd>
+				<dd><a href="">电器城商家管理规范</a></dd>
+			</dl>
+			<dl>
+				<dt>手机电器城</dt>
+				<dd><a href=""><img src="assets/images/list/3c_phone_tmall.png" alt=""></a></dd>
+			</dl>
+		</div>
+		<!-- module.3 底层：其他链接 -->
+		<footer class="f-btm">
+			<!-- unit.1 信息链接 -->
+			<p class="tmall-info area">
+				<a href="">关于天猫</a>
+				<a href="">帮助中心</a>
+				<a href="">开放平台</a>
+				<a href="">诚聘英才</a>
+				<a href="">联系我们</a>
+				<a href="">网站合作</a>
+				<a href="">法律声明</a>
+				<a href="">隐私权政策</a>
+				<a href="">知识产权</a>
+				<a href="">廉正举报</a>
+				<a href="">规则意见征集</a>
+			</p>
+			<!-- unit.2 其他链接 -->
+			<p class="tmall-otherlink area">
+				<a href="">阿里巴巴集团</a>
+				<span>|</span>
+				<a href="">淘宝网</a>
+				<span>|</span>
+				<a href="">天猫</a>
+				<span>|</span>
+				<a href="">聚划算</a>
+				<span>|</span>
+				<a href="">全球速卖通</a>
+				<span>|</span>
+				<a href="">阿里巴巴国际交易市场</a>
+				<span>|</span>
+				<a href="">1688</a>
+				<span>|</span>
+				<a href="">阿里妈妈</a>
+				<span>|</span>
+				<a href="">飞猪</a>
+				<span>|</span>
+				<a href="">阿里云计算</a>
+				<span>|</span>
+				<a href="">AliOS</a>
+				<span>|</span>
+				<a href="">阿里通信</a>
+				<span>|</span>
+				<a href="">万网</a>
+				<span>|</span>
+				<a href="">高德</a>
+				<span>|</span>
+				<a href="">UC</a>
+				<span>|</span>
+				<a href="">友盟</a>
+				<span>|</span>
+				<a href="">虾米</a>
+				<span>|</span>
+				<a href="">钉钉</a>
+				<span>|</span>
+				<a href="">支付宝</a>
+			</p>
+			<p class="tmall-copyright area">
+				<span>增值电信业务经营许可证：
+					<a href="">浙B2-20110446</a>
+				</span>
+				<span>网络文化经营许可证：
+					<a href="">浙网文[2015]0295-065号</a>
+				</span>
+				<span>
+					<a href="">12318举报</a>
+				</span>
+				<span>
+					<a href="">出版物网络交易平台服务经营备案证： 新出发浙备字第001号</a>
+				</span>
+				<span>
+					互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com	
+				</span>
+				<span>互联网药品信息服务资质证书编号：
+					<a href="">浙-（经营性）-2017-0005</a>
+				</span>
+				<span>
+					<img src="assets/images/index-police.png" alt="" class="">
+					<a href="">浙公网安备 33010002000120号</a>
+				</span>
+				<span>
+					（浙）网械平台备字[2018]第00002号
+				</span><br>
+				<span>
+					&copy; 2003-2018 TMALL.COM 版权所有
+				</span><br>
+				<a href=""><img src="assets/images/index-license1.jpg" alt=""></a>
+				<a href=""><img src="assets/images/index-license2.jpg" alt=""></a>
+			</p>
+		</footer>
+	</footer>
+</body>
+</html>

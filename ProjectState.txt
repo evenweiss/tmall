@@ -1,0 +1,73 @@
+1.使用jQuery添加特效
+2.使用jQuery添加节点，设置属性、内容
+
+主页 tmall_index
+  js特效:
+effect.1 选项卡 of part.2>module.2 右侧网址导航
+effect.2 搜索框样式 of part.3 搜索栏
+	 获得焦点，取消默认value，改为placeholder
+	 失去焦点：若用户未填内容，设置为默认value，取消placeholder
+		  若用户已填内容，value为该内容
+effect.3 选项卡 of part.4 横幅-菜单
+	 plus:文字设置颜色（数组）
+effect.4 轮播图 of part.4 横幅-菜单
+	 tips:定位z轴高度 z-index
+effect.5 鼠标移入事件 of part.6 商标墙
+	鼠标移入，显示定位0，0的标签盒子，盖住下部内容
+effect.6 轮播图 of part.7 楼层内容-module.1 天猫超市
+	2图轮播
+effect.7 瀑布流 of part.7 楼层内容 module.8 猜你喜欢
+	 传递已有li节点的数量，返回范围内5个随机数，作为已有li节点的下标，添加至父级ul中
+	 tips:注意调整第5n个盒子的外左边距：先同意边距，再单独设该li边距
+effect.8 楼层 of part.8 楼层提示
+effet.9 输入框样式（同 effect.2）of part.9 定位切换
+effets.10 定位切换 of part.9 定位切换
+
+
+列表页 list.html
+  js特效:
+effect.1 选项卡 of part.1 页首导航 同主页
+effect.2 搜索框样式 of part.2 LOGO-搜索区 同主页
+effect.3 搜索框样式2 of part.3 主导航 > module.2 行2.检索路径+结果
+	 获得焦点，清除value，失去加点，无内容是设置默认value（‘在当前条件下搜索’）
+effect.4 鼠标事件：mouseover进入显示 of part.3 主导航 > module.3 行3.高级检索
+effect.5 鼠标事件：滑过+点击 of part.4 筛选filter > unit.1 排序sort
+effect.6 鼠标事件：滑过+点击 of part.4 筛选filter > unit.4 视图viewType
+effect.7 鼠标事件：点击,n++,赋值插入html，同时改变方向节点样式
+	 of part.4 筛选filter > unit.4 视图viewType
+effect.8 瀑布流 of part.5 瀑布流waterfall 同主页
+
+
+详情页 details.html
+  js特效:
+effect.1 选项卡 of part.1 页首导航 同主页
+effect.2 放大镜 of Part.4>module.1>unit.1 上部放大镜
+	 tips:注意设置相同宽高比 move/smimg=showbox/lgimg
+effect.3 二级选单联动 part.4 > module.2 >unit.3 运费carriage
+	 选择完成后 替换显示内容
+effect.4 鼠标事件：鼠标滑过显示红色边框，点击显示节点i.checked
+	 of part.4 >  module.5 > cell.2 套装类型
+effect.5 鼠标事件：鼠标点击增减数字
+	 of part.4 >  module.5 > cell.2 套装类型 html行.313 
+effect.6 选项卡 of part.5>module.1>unit.5 宝贝排行榜 html.行.503
+effect.7 选项卡 of part.5>module.2 右侧列表
+	 tips:非单个显示，选择选项是，隐藏对应节点之前的内容，显示该节点及其后的内容
+	 tips:注意第二个选项对应内容默认隐藏
+effect.8 ajax添加节点 of part.5>module.2>unit.3 瀑布流(伪) html 行.651
+	 tips:动态页面返回的数据为json字符串类型，注意JSON.parse()转型为数组对象
+
+
+登录页 login.html
+effect.1 二维码登录-滑动特效(未调整完成)
+effect.2 二维码/密码登录切换-点击右上角和二维码登录页右下角<密码登录>标签
+	 tips:注意设置全局变量，表示初始状态
+effect.3 用户名 Ajax数据提交验证
+effect.4 密码 正则验证
+
+
+注册页 register.html
+effect.1 遮罩层
+effect.2 拖拽
+effect.3 电话所属地区选择：节点内容替换+自动滚动（未达成）
+effect.4 电话正则验证
+	 tips:注意验证通过时显示的√小图标

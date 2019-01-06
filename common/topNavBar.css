@@ -1,0 +1,292 @@
+#top-nav{
+	width: 100%;
+	height: 26px;
+	background-color: #f2f2f2;
+	border-bottom:1px solid #e5e5e5;
+}
+#top-nav > nav.nav-wrap{
+	width: 1190px;
+	height: 26px;
+	margin: 0 auto;
+	line-height: 26px;
+}
+	/*step.2 公共样式*/
+.nav-wrap a{
+	color: #999;
+}
+.nav-wrap a:hover{
+	color: #ff0036;
+	text-decoration: underline;
+}
+	/* -字体图标 */
+.quick-access>#quick-menu i.iconfont{
+	font-size: 12px;
+	color:#ff0036;
+	position: absolute;
+	left: 10px;
+	top: 2px;
+}
+
+	/*module.1 左侧主页链接*/
+.nav-wrap>section.homepage>p{
+	margin-right: 20px;
+	color:#ff0036;
+	line-height: 26px;
+}
+.homepage>p>i.iconfont{
+	vertical-align: middle;
+	position: relative;
+	top: -2px;
+}
+.homepage>span{
+	color: #666;
+	margin-right: 10px;
+}
+.homepage>a{
+	display: inline-block;
+	margin-right: 10px;
+}
+
+	/*module.2 右侧快速访问*/
+
+		/*unit.1 选项名 主链接*/
+.nav-wrap > aside.quick-access{
+	position: relative;
+}
+#quick-menu a{
+	display: inline-block;
+}
+.quick-access>ul#quick-menu>li{
+	float: left;
+	position: relative;
+	z-index: 125;
+	text-align: center;
+	box-sizing: border-box;
+}
+#quick-menu>li.haslist{
+	height: 26px;
+}
+.haslist > a{
+	height: 26px;
+	padding: 0 10px;
+	line-height: 26px;
+}
+#quick-menu>li.seticonfont{
+	padding: 0 10px 0 25px;
+}
+
+		/*cell.1 我的淘宝*/
+		/*设置三角图标*/
+#iconbymarks-2down{
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-width: 3px;
+	border-style: solid dashed dashed;
+	border-color: #999 transparent transparent ;
+	transition: all .3s;
+}
+		/* -鼠标悬停，三角图标旋转*/
+		/*转js实现*/
+/*#quick-menu>li:hover #iconbymarks-2down{
+	transform: rotate(180deg);
+	transform-origin:50% 25%; 
+}*/
+
+
+	/*分割线*/
+#quick-menu>li.divide{
+	display: inline-block;
+	width: 0;
+	height: 16px;
+	margin: 0 4px;
+	border-left: 1px solid #ccc;
+	position: relative;
+	top: 5px;
+}
+
+		/*cell.7 网站导航*/
+#quick-menu>li.sitenav{
+	padding: 0;
+	margin-left: 20px;
+}
+
+	/*step.3 细节调整*/
+		/*li-淘宝网 外边距*/
+.tbw{
+	margin:0 10px;
+}
+		/*li-网站导航 字体图标位置*/
+.sitenav{
+	padding:0 0 0 13px!important;
+	position: relative;
+	margin: 0!important;
+}
+#quick-menu>li.sitenav i.iconfont{
+	left: 8px;
+}
+		/*li-有列表内容的 <a>加下划线*/
+.haslist:not(.sitenav) > a:hover{
+	text-decoration: underline;
+}
+
+		/*li-手机版 字体图标位置*/
+.verphone>a{
+	padding: 0;
+}
+
+/*unit.2 下拉列表内容*/
+	/*step.3 公共样式*/
+.haslist>div.navlist{
+	position: absolute;
+	top: 26px;
+	z-index: 100;
+	background-color: #fff;
+	padding:10px;
+	border:1px solid #eee;
+	border-top:0;
+	display: none;
+}
+.haslist>div.show{
+	display: block;
+}
+.haslist>div:not(.sitenav-list) a{
+	display: block;
+	line-height: 24px;
+}
+.haslist>div a:hover{
+	text-decoration: underline;
+}
+
+	/*cell.1 我的淘宝*/
+.haslist>div.mytb-list{
+	left: -1px;
+	width: 74px;
+}
+	/*cell.3 收藏夹*/
+.haslist>div.favorite-list{
+	width: 62px;
+}
+
+	/*cell.4 手机版*/
+.verphone>div.phone-list{
+	position: absolute;
+	left: 50%;
+	margin-left: -87px;
+	width: 175px;
+	height: 227px;
+	box-shadow: 0 0 5px #aaa;
+	padding: 0;
+	display: none;
+}
+		/* -html标签转icon*/
+.phone-list>span#iconbymarks-2up{
+	position: absolute;
+	left: 50%;
+	top: -9px;
+	margin-left: -2px;
+	z-index: 150;
+	width: 0;
+	height: 0;
+	border-width: 5px;
+	border-style: dashed dashed solid;
+	border-color: transparent transparent #fff;
+}
+		/* -插入图片*/
+.phone-list>div.qrcode{
+	height: 175px;
+	margin-bottom: 10px; 
+	background-image: url(../../images/index-qrcode.png);
+}
+.phone-list>div.qrcode-text{
+	width: 145px;
+	height: 30px;
+	margin:0 auto;
+	background-image: url(../../images/index-qr-text.png);
+}
+	/*cell.6 商家支持*/
+.haslist>div.support-list{
+	width: 122px;
+	right: 0;
+}
+.support-list h3{
+	text-align: left;
+	height: 24px;
+	line-height: 24px;
+	font-size: 12px;
+	color: #666;
+}
+.support-list > div:not(.divide){
+	width: 136px;
+}
+.support-list > div.divide{
+	width: 100%;
+	height: 0;
+	border-bottom: 1px dotted #ccc;
+}
+.haslist>div.support-list>div>a{
+	float: left;
+	width: 48px;
+	height: 30px;
+	margin-right: 20px;
+}
+	/*cell.7 网站导航*/
+		/* -step.3 公共样式*/
+.haslist>div.sitenav-list{
+	right: 0;
+	width: 1198px;
+	padding: 25px 0;
+}
+.sitenav-list>div{
+	float: left;
+	padding-left: 30px;
+	text-align: left;
+}
+.sitenav-list>div>h2{
+	height: 22px;
+	line-height: 22px;
+	margin-bottom: 8px;
+} 
+.sitenav-list>div>ul{
+	width: 455px;
+	line-height: 16px;
+}
+.sitenav-list>div>ul>li{
+	float: left;
+	margin: 6px 0;
+	width: 91px;
+	height: 16px!important;
+	line-height: 16px;
+}
+.sitenav-list>div>ul>li>a{
+	display: inline!important;
+	color: #666;
+}
+		/* -module-lt 热点推荐*/
+.sitenav-list>div.block-lt>h2{
+	color: #f56a00;	
+}
+.sitenav-list>div.block-lt a:hover{
+	color: #f56a00;
+}
+		/* -module-ct 行业市场*/
+.sitenav-list>div.block-ct>h2{
+	color: #2263d4;
+}
+.sitenav-list>div.block-ct a:hover{
+	color: #2263d4;
+}
+.sitenav-list>div.block-ct{
+	border-left: 1px solid #f5f5f5;
+	border-right: 1px solid #f5f5f5;
+}
+		/* -module-rt 服务指南*/
+.sitenav-list>div.block-rt>h2{
+	color: #666;
+}
+.sitenav-list>div.block-rt a:hover{
+	color: #666;
+}
+.sitenav-list>div.block-rt>ul{
+	width: 190px;
+}

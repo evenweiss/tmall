@@ -1,0 +1,113 @@
+/*part.12 底部*/
+	/*step.1 外框*/
+body > footer.footer{
+	width: 100%;
+	margin-top: 20px;
+	background-color: #fff;
+	border-top: 1px solid #666;
+	box-shadow: 0 0 10px #ccc;
+	overflow: hidden;
+}
+
+	/*module.1 上层：天猫承诺*/
+		/*-step.1 外框*/
+.footer > header.f-top{
+	width: 1110px;
+	height: 60px;
+	margin: 0 auto;
+	padding: 20px 40px;
+	border-bottom: 1px solid #666;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: relative;
+	background: url(../../images/tmall_ensure.jpg) no-repeat 0 0;
+}
+		/*-step.2 公共样式*/
+.f-top > a{
+	display: inline-block;
+	width: 277px;
+	height: 60px;
+	text-align: left;
+	line-height: 100px;
+}
+	/*module.1 上层：天猫承诺 结束*/
+
+	/*module.2 中层：常用链接*/
+		/*-step.1 外框*/
+.footer > div.f-mid{
+	padding: 30px 0;
+	background: url(../../images/btm_bg.png) no-repeat 0 180px;
+	background-size: 68px 25px;
+	background-position: 45px bottom;
+}
+.f-mid > dl{
+	float: left;
+	width: 186px;
+	margin-left: 52px;
+	text-align: left;
+}
+.f-mid > dl > dt{
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+	font-weight: 700;
+	color:#646464;
+}
+.f-mid > dl > dd{
+	height: 20px;
+	line-height: 20px;
+}
+.f-mid > dl > dd > a{
+	color:#8b8b8b;
+}
+
+	/*module.2 中层：常用链接 结束*/
+
+	/*module.3 底层：其他链接*/
+		/*-step.1 外框*/
+.footer > footer.f-btm{
+	background-color: #000;
+	border-top: 2px solid #ff0036;
+}
+		/*-step.2 公共样式*/
+.f-btm > p{
+	text-align:left;
+	padding: 5px;
+	line-height: 25px;
+}
+.f-btm > p:not(.tmall-copyright) > a{
+	color: #fff;
+	font-size: 12px;
+}
+		/*unit.1 信息链接*/
+.tmall-info > a{
+	margin-right: 3px;
+}
+		/*unit.2 其他链接*/
+.tmall-otherlink{
+	color: #fff;
+}
+.tmall-otherlink > span{
+	margin: 0 3px;
+}
+.tmall-copyright{
+	color: #a4a4a4;
+	padding-bottom: 30px!important;
+}
+.tmall-copyright > span{
+	display: inline-block;
+	margin-right: 65px;
+}
+.tmall-copyright a{
+	color: #a4a4a4;
+}
+.tmall-copyright > span > img{
+	position: relative;
+	top: -2px;
+}
+.tmall-copyright > a{
+	display: inline-block;
+	margin: 3px 3px 0 0;
+}
+

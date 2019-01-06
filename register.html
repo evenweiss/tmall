@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>账户注册 | 淘宝网</title>
+	<link rel="stylesheet" href="assets/css/register.css">
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/base.css">
+	<link rel="stylesheet" href="assets/css/iconfont-register.css">
+	<script src="assets/js/jquery-1.8.3.min.js"></script>
+	<script src="assets/js/register.js"></script>
+</head>
+<body>
+	<!-- 遮罩层 -->
+	<div id="shield"></div>
+	<!-- 协议内容 -->
+	<div id="agreement">
+		<h4>注册协议</h4>
+		<p><strong>【审慎阅读】</strong>您在申请注册流程中点击同意前，应当认真阅读以下协议。<b>请您务必审慎阅读、充分理解协议中相关条款内容，其中包括：</b></p>
+		<p>1、<b>与您约定免除或限制责任的条款；</b></p>
+		<p>2、<b>与您约定法律适用和管辖的条款；</b></p>
+		<p>3、<b>其他以粗体下划线标识的重要条款。</b></p>
+		<p>如您对协议有任何疑问，可向平台客服咨询。</p>
+		<p><strong>【特别提示】</strong>当您按照注册页面提示填写信息、阅读并同意协议且完成全部注册程序后，即表示您已充分阅读、理解并接受协议的全部内容。如您因平台服务与淘宝发生争议的，适用《淘宝平台服务协议》处理。如您在使用平台服务过程中与其他用户发生争议的，依您与其他用户达成的协议处理。</p>
+		<p><b>阅读协议的过程中，如果您不同意相关协议或其中任何条款约定，您应立即停止注册程序。</b></p>
+		<a href="http://terms.alicdn.com/legal-agreement/terms/TD/TD201609301342_19559.html?spm=a2145.7268393.0.0.f9aa5d7cvM1edi" target="_blank">《淘宝平台服务协议》</a>
+		<a href="http://terms.alicdn.com/legal-agreement/terms/suit_bu1_taobao/suit_bu1_taobao201703241622_61002.html?spm=a2145.7268393.0.0.f9aa5d7cvM1edi" target="_blank">《法律声明及隐私权政策》</a>
+		<a href="https://ds.alipay.com/fd-inhm9zcq/index.html" target="_blank">《支付宝服务协议》</a>
+		<button>同意协议</button>
+	</div>
+	<!-- 页首导航 -->
+	<header>
+		<div class="area" id="topnav">
+			<div class="login fl">
+				<a href="login.html" class="darkred">亲，请登录</a>
+				<a href="javascript:location.reload();">免费注册</a>
+			</div>
+			<div class="mobile fl"><a href="">手机逛淘宝</a></div>
+			<ul class="sitenav fr clearfix">
+				<li><a href="https://www.taobao.com/?spm=a2145.7268393.1581860521.1.f9aa5d7cwvQHzO" class="darkred">淘宝网首页</a></li>
+				<li class="mytaobao">
+					<a href="https://i.taobao.com/my_taobao.htm?spm=a2145.7268393.1997525045.1.f9aa5d7cMiWD4k">我的淘宝</a>
+					<i class="iconfont icon-xia"></i>
+				</li>
+				<li class="cart">
+					<i class="iconfont icon-gouwuchexuanzhong orange"></i>
+					<a href="">购物车</a>
+					<span>0</span>
+					<i class="iconfont icon-xia orange"></i>
+				</li>
+				<li class="favorite">
+					<a href="">
+						<i class="iconfont icon-iconfontxingxing"></i>
+						收藏夹
+					</a>
+					<i class="iconfont icon-xia"></i>
+				</li>
+				<li><a href="">商品分类</a></li>
+				<li class="divide">|</li>
+				<li>
+					<a href="">卖家中心</a>
+					<i class="iconfont icon-xia"></i>
+				</li>
+				<li>
+					<a href="">联系客服</a>
+					<i class="iconfont icon-xia"></i>
+				</li>
+				<li class="allsidenav">
+					<i class="iconfont icon-liebiao2 orange"></i>
+					<a href="">网站导航</a>
+					<i class="iconfont icon-xia orange"></i>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<!-- 页中注册 -->
+	<div class="register area">
+		<!-- 首部 logo -->
+		<header class="clearfix">
+			<a href=""><i class="iconfont icon-taobao01"></i></a>
+			<h2>用户注册</h2>
+		</header>
+		<!-- 中部 注册引导 -->
+		<div id="top-wrap" class="area">
+
+			<!-- -注册引导-上部选项 -->
+			<ul id="top-opts">
+				<li class="active">
+					<span class="active">1</span>
+					设置用户名
+				</li>
+				<li>
+					<span>2</span>
+					填写账号信息
+				</li>
+				<li>
+					<span>3</span>
+					设置支付方式</li>
+				<li>
+					<span id="adjustment"><i class="iconfont icon-dui1"></i></span>
+					注册成功
+				</li>
+			</ul>
+			<!-- -注册引导-上部选项-语言选择 -->
+			<div class="lang">
+				<span>中文</span>
+				<b>|</b>
+				<span>English</span>
+			</div>
+		</div>
+			<!-- -注册引导-下部内容 -->
+		<ul id="btm-cont">
+			<!-- -注册引导-下部内容-手机号码 -->
+			<li class="phone clearfix">
+				<span>手机号</span>
+				<div id="select">
+					<div class="showbox">
+						<span class="fl">中国大陆</span>
+						<span class="fr">+86</span>
+					</div>
+					<ul class="optslist">
+						<li class="selected">
+						<span class="fl">中国大陆</span>
+						<span class="fr">+86</span></li>
+						<li>
+						<span class="fl">中国台湾地区</span>
+						<span class="fr">+866</span></li>
+						<li><span class="fl">中国香港</span>
+						<span class="fr">+852</span></li>
+						<li><span class="fl">马来西亚</span>
+						<span class="fr">+60</span></li>
+						<li><span class="fl">新加坡</span>
+						<span class="fr">+65</span></li>
+						<li><span class="fl">日本</span>
+						<span class="fr">+81</span></li>
+						<li><span class="fl">韩国</span>
+						<span class="fr">+82</span></li>
+						<li><span class="fl">美国</span>
+						<span class="fr">+1</span></li>
+						<li><span class="fl">加拿大</span>
+						<span class="fr">+1</span></li>
+						<li><span class="fl">澳大利亚</span>
+						<span class="fr">+61</span></li>
+					</ul>
+					<i class="iconfont icon-xia"></i>
+				</div>
+				<input type="text" placeholder="请输入你的手机号码">
+				<!-- 手机号码错误提示 -->
+				<span class="erro fl">
+					<i class="iconfont icon-cuo"></i>
+					<span class="info"></span>
+				</span>
+			</li>
+			<!-- -注册引导-下部内容-滑动验证 -->
+			<!-- js特效暂缺 -->
+			<li class="vertify clearfix">
+				<span>验证</span>
+				<div class="longbox fl">
+					<div class="move"><i class="iconfont icon-shuangjiantou"></i></div>
+					请按住滑块，拖动到最右边
+				</div>
+			</li>
+			<!-- -注册引导-下部内容-下一步按钮 -->
+			<li class="button">下一步</li>
+			<!-- -注册引导-下部内容-切换企业注册 -->
+			<li class="switch"><a href="">切换成企业账户注册</a></li>
+			<li class="suggest"><img src="assets/images/icon-suggest.png" alt=""><a href="">注册改进建议 "淘宝注册"改进建议</a></li>
+		</ul>
+	</div>
+	<!-- 侧边固定定位导航 -->
+	<nav>
+		<ul>
+			<li class="bee">
+				<span class="dialog"></span>
+				<span class="head"></span>
+				<span class="body"></span>
+				<span class="minimize"></span>
+			</li>
+			<li class="title">有问题？找<b>小蜜</b>哦~</li>
+			<li class="question">
+				<ul class="queslist">
+					<li>淘宝账户名是指什么？</li>
+					<li>忘记会员名，怎么找回？</li>
+					<li>忘记淘宝账号密码，怎么找回？</li>
+					<li>手机（停机、丢失等）收不到验证码，怎么办？</li>
+					<li>手机、邮箱正常使用，但是接收不到验证码，怎么办？</li>
+				</ul>
+			</li>
+			<li class="footer">询问小蜜<span></span></li>
+		</ul>
+	</nav>
+	<!-- 页尾链接 -->
+	<footer class="area">
+		<p>
+			<a href="">阿里巴巴集团</a>
+			<span>|</span>
+			<a href="">阿里巴巴国际站</a>
+			<span>|</span>
+			<a href="">阿里巴巴中国站</a>
+			<span>|</span>
+			<a href="">全球速卖通</a>
+			<span>|</span>
+			<a href="">淘宝网</a>
+			<span>|</span>
+			<a href="">天猫</a>
+			<span>|</span>
+			<a href="">聚划算</a>
+			<span>|</span>
+			<a href="">一淘</a>
+			<span>|</span>
+			<a href="">阿里妈妈</a>
+			<span>|</span>
+			<a href="">阿里云计算</a>
+			<span>|</span>
+			<a href="">云OS</a>
+			<span>|</span>
+			<a href="">万网</a>
+			<span>|</span>
+			<a href="">支付宝</a>
+		</p>
+		<p>
+			<a href="">关于淘宝</a>
+			<a href=""></a>
+			<a href="">合作伙伴</a>
+			<a href="">营销中心</a>
+			<a href="">联系客服</a>
+			<a href="">开放平台</a>
+			<a href="">诚征英才</a>
+			<a href="">联系我们</a>
+			<a href="">网站地图</a>
+			<a href="">法律声明及隐私权政策</a>
+			<span>&copy; 2018 Taobao.com 版权所有</span>
+		</p>
+		<p class="licens">
+			<span>网络文化经营许可证：</span>
+			<a href="">文网文[2010]040号</a>
+			<span>|</span>
+			<span>增值电信业务经营许可证：浙B2-20080224-1</span>
+			<span>信息网络传播视听节目许可证：1109364号</span>
+		</p>
+	</footer>
+</body>
+</html>

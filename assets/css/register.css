@@ -1,0 +1,520 @@
+/*1.遮罩层*/
+#shield{
+	opacity: .7;
+	/*display: none;*/
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+/*2.协议内容*/
+#agreement{
+	width: 680px;
+	padding: 20px;
+	border:2px solid #dedede;
+	border-top-color: #ff4a00;
+	background-color: #fff;
+	color:#3e3e3e;
+	text-align: left;
+	position: absolute;
+	z-index: 150;
+}
+#agreement>h4{
+	font-size: 16px;
+}
+#agreement>p{
+	margin:8px 0 0 5px;
+	font-size: 12px;
+	line-height: 18px;
+	box-sizing: border-box;
+}
+#agreement>p>b{
+	text-decoration: underline;
+	color: #000;
+}
+#agreement>p>strong{
+	color: #000;
+	font-weight: bold;
+}
+#agreement>a{
+	display: block;
+	margin: 10px 0;
+	font-size: 16px;
+	font-weight: bold;
+	color: #ff5b20;
+	line-height: 20px;
+}
+#agreement>a:hover{
+	text-decoration: underline;
+}
+#agreement>button{
+	display: block;
+	width: 180px;
+	height:36px;
+	padding: 0 20px;
+	margin: 10px auto;
+	background-color: #ff4001;
+	border: 0;
+	border-radius: 3px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	cursor: pointer;
+}
+#agreement>button:hover{
+	background-color: #f73500;
+}
+
+
+/*3.页首导航*/
+body>header{
+	width: 100%;
+	height: 36px;
+	background-color: #F5F5F5;
+	border-bottom: 1px solid #eee;
+	line-height: 35px;
+}
+body>header>div.area{
+	height: 35px;
+	position: relative;
+	z-index: 100;
+}
+#topnav a{
+	color: #6C6C6C;
+}
+#topnav a:hover{
+	color: #f40;
+}
+#topnav a.darkred{
+	color:#F22E00!important;
+}
+
+	/*页首导航-左侧登录*/
+.login{
+	margin-right: 20px;
+	height:35px; 
+}
+.login>a{
+	margin-right: 5px;
+}
+	/*页首导航-右侧导航*/
+.sitenav>li{
+	float: left;
+	padding: 0 7px;
+	position: relative;
+	z-index: 100;
+}
+	/*右侧导航-我的淘宝*/
+.sitenav i.icon-xia{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	font-size: 12px;
+	transform: scale(.5);
+	font-weight: 900;
+	position: relative;
+	top:6px;
+}
+	/*右侧导航-购物车*/
+.sitenav i.orange{
+	color: #f40;
+}
+.sitenav .cart span{
+	color: #f40;
+	font-weight: 700;
+}
+	/*右侧导航-分割线*/
+.sitenav .divide{
+	color:#eee;
+	line-height: 35px;
+}
+	/*右侧导航-网址导航*/
+.sitenav .allsidenav i.orange{
+	font-size: 10px;
+}
+/*页首导航-结束*/
+
+
+
+/*4.页中注册*/
+	/*首部 logo*/
+.register{
+	font-family: "\5FAE\8F6F\96C5\9ED1","\534E\6587\7EC6\9ED1","\9ED1\4F53",arial;
+}
+.register>header{
+	padding:20px 0 ;
+}
+.register>header i{
+	font-size: 100px;
+	float: left;
+	margin-top: -50px;
+	width: 100px;
+	height: 75px;
+	color:#ff4001;
+}
+.register>header>h2{
+	float: left;
+	margin: 5px 0 0 10px;
+	font-size: 24px;
+	font-weight: 400;
+}
+	/*中部 注册引导*/
+.register > div#top-wrap{
+	height:48px;
+	margin-top: 20px;
+	border-bottom: 2px solid #ccc;
+	position: relative;
+}
+	/*-注册引导-上部选项*/
+#top-wrap > ul#top-opts{
+	width: 720px;
+	height: 50px;
+	margin:0 auto;
+	position: relative;
+}
+#top-opts > li{
+	float: left;
+	width: 180px;
+	height: 48px;
+	line-height: 48px;
+	font-size: 16px;
+	font-weight: 700;
+}
+#top-opts > li.active{
+	border-bottom: 2px solid #f40;
+}
+
+	/*激活标签样式*/
+#top-opts span{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	line-height: 24px;
+	background-image: url(../images/icon-circle2.png);
+	color: #fff;
+}
+#top-opts .active>span{
+	background-image: url(../images/icon-circle1.png);
+}
+	/*--最后一个span标签微调*/
+#adjustment > i{
+	font-size: 13px;
+}
+	/*-注册引导-上部选项-语言选择*/
+#top-wrap > div.lang{
+	position: absolute;
+	right: 0;
+	top: 16px;
+}
+.lang > span{
+	display:inline-block;
+	padding: 2px 5px;
+	border:1px solid #eee;
+	border-radius: 3px;
+}
+.lang > b{
+	padding: 2px 0;
+	color:#999;
+}
+	/*-注册引导-下部内容*/
+ul#btm-cont{
+	height: 247px;
+	padding:50px 300px;
+	position: relative;
+}
+#btm-cont > li{
+	margin-bottom: 20px;
+	text-align: right;
+}
+#btm-cont>li>span:first-child{
+	float: left;
+	width: 45px;
+	height: 37px;
+	margin: 0 20px 0 120px;
+	font-size:14px; 
+	text-align: right;
+	line-height: 37px;
+}
+
+	/*-注册引导-下部内容-手机号码*/
+#btm-cont>li.phone>div#select{
+	position: relative;
+	float: left;
+}
+#select>div.showbox{
+	width: 128px;
+	height: 35px;
+	padding: 0 22px 0 10px;
+	border:1px solid #ccc;
+	font-size: 14px;
+	line-height: 35px;
+	cursor: pointer;	
+	font-weight: 700;
+	position: relative;
+	z-index: 50;
+}
+		/*--超出文字 省略号*/
+.showbox>span.fl{
+	width: 75px;
+	text-align: left;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+#select>i.iconfont{
+	position: absolute;
+	top:10px;
+	right: 3px;
+	font-size: 12px;
+	color: #ccc;
+}
+#select>ul.optslist{
+	width: 160px;
+	height: 200px;
+	border: 1px solid #ccc;
+	font-size: 12px;
+	position: absolute;
+	top: -201px;
+	left: 0px;
+	background-color: #fff;
+	display: none;
+	overflow-y: scroll;
+}
+#select>ul.show{
+	display: block;
+}
+.optslist>li{
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	cursor: pointer;
+}
+		/*--js特效样式*/
+.optslist>li.selected,.optslist>li.active{
+	background-color: #f40;
+	color: #fff;
+}
+		/*--输入手机号*/
+.phone>input{
+	float: left;
+	width: 150px;
+	height: 35px;
+	border: 1px solid #eee;
+	padding-left: 10px;
+}
+.phone>input::placeholder{
+	font-size: 14px;
+}
+	/*-手机号码错误提示*/
+#btm-cont>li.phone{
+	position: relative;
+}
+.phone>span.erro{
+	position: absolute;
+	left: 510px;
+	top: 0;
+	margin-left: 10px;
+	width:200px;
+	height: 37px;
+	line-height: 37px;
+	text-align: left;
+	color: #f40;
+	font-size: 12px;
+	display:none;
+}
+	/*-注册引导-下部内容-滑动验证*/
+.vertify>div.longbox{
+	width:300px;
+	height: 37px;
+	background-color: #ededed;
+	text-align: center;
+	line-height: 37px;
+	position: relative;
+}
+.longbox>div.move{
+	width: 40px;
+	height: 35px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	position: absolute;
+	left: 0;
+	top: 0;
+	cursor: move;
+}
+.move>i.iconfont{
+	display: inline-block;
+	font-size: 20px;
+}
+	/*-注册引导-下部内容-滑动验证 js特效暂缺*/
+	/*-注册引导-下部内容-下一步按钮*/
+#btm-cont > li.button{
+	width: 140px;
+	height: 35px;
+	margin-left: 220px;
+	margin-top:30px;
+	padding: 0 20px;
+	background-color: #ededed;
+	border-radius: 3px;
+	color: #999;
+	text-align: center;
+	line-height: 35px;
+	font-size: 16px;
+}
+#btm-cont > li.button:hover{
+	color:#fff;
+}
+	/*-注册引导-下部内容-切换企业注册*/
+#btm-cont > li.switch{
+	width: 180px;
+	margin-left: 220px;
+	text-align: left;
+}
+.switch > a{
+	color: #f40;
+}
+.switch > a:hover{
+	text-decoration: underline;
+}
+	/*-注册引导-下部内容-建议*/
+#btm-cont > li.suggest{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	margin: 10px;
+}
+.suggest > a{
+	color: #f40;
+	margin-left: 10px;
+}
+/*6.侧边固定定位导航*/
+body>nav{
+	position: fixed;
+	right: 100px;
+	top: 300px;
+	z-index: 50;
+}
+body>nav>ul>li:not(.bee){
+	background-color: #f9f9f9;
+}
+body>nav>ul>li.bee{
+	width: 150px;
+	height: 70px;
+	position: relative;
+}
+	/*-首部图像定位*/
+.bee > span:not(.minimize){
+	position: absolute;
+	background-image: url(../images/register-bee.png);
+	background-repeat: no-repeat;
+}
+.bee > span.dialog{
+	left: 25px;
+	top: 30px;
+	width: 64px;
+	height: 34px;
+	background-position: -150px 0;
+}
+.bee > span.head{
+	left: 93px;
+	top: 10px;
+	z-index: 75;
+	width: 49px;
+	height: 66px;
+	background-position: -45px 0;
+}
+.bee > span.body{
+	left: 110px;
+	bottom: -10px;
+	width: 45px;
+	height: 36px;
+}
+.bee > span.minimize{
+	position: absolute;
+	bottom: -8px;
+	right: -8px;
+	z-index: 100;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background-color: #f7931e;
+	background-image: url(../images/register-minimize.png);
+	cursor: pointer;
+}
+
+	/*-标题*/
+body>nav>ul>li.title{
+	height: 27px;
+	padding: 11px 0 5px;
+	background-color: #f7931e;
+	position: relative;
+	z-index: 50;
+	border-radius: 3px 3px 0 0;
+	cursor: move;
+	lighting-color: 27px;
+	color: #fff;
+}
+.title > b{
+	font-weight: 400px;
+	font-size: 16px;
+}
+	/*-中部*/
+.question > ul.queslist{
+	width: 150px;
+	box-sizing: border-box;
+	padding: 3px 7px;
+	text-align: left;
+}
+.question > ul.queslist > li{
+	border-bottom: 1px solid #ddd;
+	padding: 0 8px 1px ;
+	line-height: 24px;
+	cursor: pointer;
+	max-height: 48px;
+	overflow: hidden;
+}
+.queslist > li:hover{
+	background-color: #fff;
+}
+	/*-结尾*/
+body>nav>ul>li.footer{
+	height: 23px;
+	padding: 8px 0;
+	color: #34bbf9;
+	line-height: 23px;
+	border-radius: 0 0 3px 3px;
+}
+.footer > span{
+	display: inline-block;
+	width: 15px;
+	height: 16px;
+	margin-left: 10px;
+	background:url(../images/register-bee.png) -230px 0; 
+	position: relative;
+	top: 3px;
+}
+
+
+/*7.页尾链接*/
+body > footer.area > p{
+	height: 36px;
+	padding: 4px 0;
+	border-top: 1px solid #ddd;
+	line-height: 36px;
+	text-align: left;
+}
+footer.area > p:nth-child(1) > span{
+	margin:0 3px;
+	color: #ddd;
+}
+footer.area > p > a{
+	color: #6c6c6c;
+}
+footer.area > p > a:hover{
+	color: #f40;
+}
+footer.area > p a{
+	margin-right: 5px;
+}
+footer.area > p span{
+	color:#9c9c9c;
+}
+|

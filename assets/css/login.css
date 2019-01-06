@@ -1,0 +1,355 @@
+/*页首 logo*/
+header{
+	width: 1190px;
+	height: 45px;
+	margin: 0 auto;
+	padding:22px 0;
+}
+header img{
+	width: 190px;
+	float: left;
+	margin-top: 9px;
+}
+
+/*页中 左侧banner*/
+#banner-wrap{
+	width: 100%;
+	height: 600px;
+	background-color: rgb(255, 91, 102);
+}
+#banner-wrap>.inner-box{
+	width: 1190px;
+	height: 600px;
+	margin:0 auto;
+	position:relative;
+}
+.inner-box>a{
+	position: absolute;
+	left: 75px;
+	top:80px;
+	width:630px;
+	height: 400px;
+}
+/*页中 右侧登录*/
+	/*外框*/
+#banner-wrap .form-content{
+	width:350px;
+	height: 404px;
+	padding: 25px;
+	box-sizing: border-box;
+	position: absolute;
+	right: 60px;
+	top: 91px;
+	background-color: #fff;
+}
+	/*登录界面-右上角点击切换*/
+.form-content>#toggle{
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 50;
+	font-size: 52px;
+	color:#ff0036;
+	cursor: pointer;
+}
+.form-content>#toggle:hover{
+	color:#f52b00;
+}
+
+.form-content>div{
+	display: none;
+}
+.form-content>div.show{
+	display: block;
+}
+	/*右上角切换注释*/
+.form-content>div.tips{
+	display: block;
+	width:126px;
+	height: 16px;
+	padding:5px 20px 5px 15px;
+	border:1px solid #f3d995;
+	background-color: #fefcee;
+	line-height: 16px;
+	font-size: 12px;
+	color:#df9c1f;
+	position: absolute;
+	right: 60px;
+	top: 10px;
+	z-index: 100;
+}
+.tips>p>i{
+	margin-right: 3px;
+	font-size: 18px;
+	color:#df9c1f;
+	line-height: 18px;
+	vertical-align: middle;
+	position: relative;
+	top: -2px;
+}
+.tips>span#iconbymarks-arrow2r{
+	position: absolute;
+	right: -5px;
+	top: 8px;
+	width: 8px;
+	height: 8px;
+	border:1px solid #f3d995;
+	border-left: 0;
+	border-bottom: 0;
+	background-color: #fefcee;
+	transform: rotate(45deg);
+}
+
+	/*二维码登录-开始*/
+#qr>h6,#pw>h6{
+	margin-top: 20px;
+	color:#3c3c3c;
+	font-size: 16px;
+	text-align: left;
+}
+	/*二维码登录-js特效-滑动*/
+#qr>div.qrbox{
+	height: 140px;
+	margin-top:24px;
+	line-height: 140px;
+	position: relative;
+}
+.qrbox>img.qrcode{
+	position: absolute;
+	left: 80px;
+	vertical-align: top;
+}
+.qrbox>img.scanqr{
+	position: absolute;
+	left: 170px;
+	top:-10px;
+	width: 100px;
+	display: none;
+}
+
+	/*二维码登录-底部链接 part1*/
+#qr>p{
+	height:36px;
+	padding: 0 60px;
+	margin-top: 20px;
+	font-size: 12px;
+	text-align: left;
+	line-height: 18px;
+	color:#9c9c9c;
+}
+#qr>p>i{
+	float: left;
+	width: 34px;
+	height: 36px;
+	margin: 9px 10px 0 0;
+	font-size: 34px;
+	font-weight: bold;
+	color:#ff0036;
+}
+#qr>p>a{
+	color:#ff0036;
+}
+	/*二维码登录-底部链接 part2*/
+#qr>footer{
+	margin-top: 20px;
+	height: 18px;
+	width: 120px;}
+#qr>footer>a:first-child{
+	margin-right: 10px;
+	cursor: pointer;
+}
+#qr>footer>a:hover{
+	color:#ff0036;
+}
+	/*二维码登录-结束*/
+
+
+
+
+	/*密码登录-开始*/
+	/*密码登录-输入框统一样式*/
+#pw>form{
+	padding-top: 10px;
+	position: relative;
+}
+#pw>form>div{
+	margin-top: 25px;
+	height: 40px;
+	border:1px solid #ddd;
+}
+#pw>form>div>i{
+	float: left;
+	width: 40px;
+	height: 40px;
+	background-color: #ddd;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 40px;
+	color: #fff;
+}
+#pw>form>div>input{
+	float: left;
+	width: 253px;
+	height: 40px;
+	border:0;
+	padding-left: 5px;
+	font-size: 14px;	
+}
+input::placeholder {
+	color:#999;
+}	
+/*input::-moz-input-placeholder {
+	color:#999;
+}
+input::-webkit-input-placeholder {
+	color:#999;
+}*/
+	/*提交按钮*/
+#pw>button{
+	width: 300px;
+	height: 42px;
+	background-color: #f40;
+	border:0;
+	margin-top: 25px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 42px;
+	text-align: center;
+	cursor: pointer;
+}
+#pw>button:hover{
+	background-color: #f52b00;
+}
+	/*用户名存在提示*/
+#info{
+	position: absolute;
+	top: -20px;
+	left: 0;
+	width: 278px;
+	height: 28px;
+	padding: 0 10px;
+	font-size: 16px;
+	text-align: center;
+	line-height: 30px;
+	border:1px solid #f40;
+	background-color: #fef2f2;
+	color: #f60;
+}
+.info{
+	display:none;
+}
+#info i{
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+}
+	/*其他登录方式*/
+#pw>p.other-login{
+	margin: 20px 0;
+	height: 20px;
+}
+.other-login>span{
+	float: left;
+	line-height: 16px;
+	margin-right: 25px;
+}
+.other-login>span i{
+	position: relative;
+	top:2px;
+	margin-right: 3px;
+	font-size: 16px;
+}
+#pw>.other-login>span i.icon-qunfengxinlangweibo{
+	color: #e52425;
+}
+#pw>.other-login>span i.icon-zhifubao{
+	color:#1ba9ee;
+}
+#pw>p a{
+	color:#6c6c6c
+}
+#pw>p a:hover{
+	color: #f40
+}
+	/*密码登录页-其他链接*/
+#pw>p.login-links>a{
+	margin-right: 5px;
+}	
+
+
+
+
+
+
+
+
+
+
+/*页尾*/
+footer{
+	width: 100%;
+	height: 177px;
+	margin-top: 40px;
+}
+footer>.anchor-wrap{
+	width: 1190px;
+	height: 177px;
+	margin: 0 auto;
+	text-align: left;
+}
+.anchor-wrap a:hover{
+	text-decoration: underline;
+}
+	/*页尾-第一导航*/
+.anchor-wrap>p.tmall-info,.other-link{
+	height: 25px;
+	padding: 5px 0;
+	line-height: 25px;
+}
+.tmall-info>a{
+	margin-right: 3px;
+	color: #000;
+}
+	/*页尾-第二导航*/
+.anchor-wrap>p.other-link{
+	height: 25px;
+	padding: 5px 0;
+	line-height: 25px;
+}
+.other-link>a{
+	margin-right: 12px;
+	color: #000;
+}
+
+	/*页尾-第三导航*/
+footer>ul.copyright{
+	color:#666;
+}
+.copyright>li{
+	float: left;
+	margin-right: 65px;
+	padding: 5px 0;
+}
+.copyright>li>a{
+	color: #999;
+}
+	/*页尾-第三导航 微调*/
+.set-img img{
+	width: 20px;
+	margin: -5px 5px 0 0;
+}
+.copyright>li.set-br{
+	margin-right: 900px;
+	padding: 0;
+}
+.copyright>li.sp{
+	padding: 0;
+	height: 20px;
+	line-height: 20px;
+}
+
+
+     
+
+

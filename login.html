@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>理想生活上天猫</title>
+	<link rel="stylesheet" href="assets/css/login.css">
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/base.css">
+	<link rel="stylesheet" href="assets/css/iconfont-login.css">
+	<script src="assets/js/jquery-1.8.3.min.js"></script>
+	<script src="assets/js/login.js"></script>
+</head>
+<body>
+	<!-- 页首 -->
+	<header>
+		<a href="https://www.tmall.com/?spm=a2240.7829288.a2226n0.1.51634fe5ZcuR3j" target="_self"><img src="assets/images/login-logo.png" alt=""></a>
+	</header>
+	<!-- 页中 -->
+	<div id="banner-wrap">
+		<div class="inner-box">
+			<!-- 页中 左侧banner -->
+			<img src="assets/images/login-banner.jpg" alt="">
+			<a href="https://pages.tmall.com/wow/a/act/20548/upr?spm=a2240.7829288.0.0.51634fe5sLTAcx&wh_weex=true&wh_biz=tm&pos=1&wh_pid=industry-153349&acm=lb-zebra-153802-761482.1003.2.4446913&scm=1003.2.lb-zebra-153802-761482.ITEM_1540493750808_4446913" target="_blank"></a>
+			<!-- 页中 右侧登录 -->
+			<div class="form-content">
+				<i class="iconfont icon-diannao" id="toggle"></i>
+				<div class="tips">
+					<span id="iconbymarks-arrow2r">
+					</span>
+					<p>
+						<i class="iconfont icon-hx_dunpai"></i>
+						<span class="cont">密码登录在这里</span>
+					</p>
+				</div>
+				<!-- 二维码登录页 -->
+				<div id='qr' class="show">
+					<h6>手机扫码，安全登录</h6>
+					<div class="qrbox">
+						<img src="assets/images/login-qrcode.png" alt="" class="qrcode">
+						<img src="assets/images/login-scanqr.png" alt="" class="scanqr">
+					</div>
+					<!-- 二维码登录-底部链接 part1 -->
+					<p class="forget">
+						<i class="iconfont icon-erweima"></i>
+						打开 <a href="https://www.tmall.com/wow/portal/act/app-download?spm=a2107.1.25847036.1.2a1d4kp54kp5ql&mmstat=pc_login" target="_blank">手机天猫</a> | <a href="https://www.taobao.com/m?spm=a2107.1.25847036.2.2a1d4kp54kp5ql" target="_blank">手机淘宝</a><br>扫一扫登录
+					</p>
+					<footer class="fr">
+						<a id="changepw">密码登录</a>
+						<a href="http://register.tmall.com/?spm=a2107.1.0.0.2a1d4kp54kp5ql&f=login" target="_blank">免费注册</a>
+					</footer>
+				</div>
+				<!-- 密码登录页 -->
+				<div id="pw">
+					<h6>密码登录</h6>
+					<form action="post">
+						<div id="username">
+							<i class="iconfont icon-zhanghao"></i>
+							<input type="search" name="username" placeholder="会员名/邮箱/手机号">
+						</div>
+						<div id="password">
+							<i class="iconfont icon-icon_password_yes"></i>
+							<input type="password" name="pw">
+						</div>
+						<p id="info" class="info">
+							<i class="iconfont icon-cuowujinzhi"></i>
+							<span id="cont"></span>
+						</p>
+					</form>
+					<button>登录</button>
+					<!-- 其他登录方式 -->
+					<p class="other-login">
+						<span><a href="http://weibo.com/login.php?spm=a2107.1.0.0.3e3e11d9eHhAtq&entry=taobao&goto=https%3A%2F%2Flogin.taobao.com%2Faso%2Ftvs%3Fdomain%3Dweibo%26sid%3D9c8a3c9dff2be75141f97f38a923f693%26target%3D&goto2=" target="_blank"><i class="iconfont icon-qunfengxinlangweibo"></i>微博登录</a></span>
+						<span><a href="https://auth.alipay.com/login/index.htm?loginScene=7&goto=https%3A%2F%2Fauth.alipay.com%2Flogin%2Ftaobao_trust_login.htm%3Ftarget%3Dhttps%253A%252F%252Flogin.taobao.com%252Fmember%252Falipay_sign_dispatcher.jhtml%253Ftg%253D&params=VFBMX3JlZGlyZWN0X3VybD0%3D" target="_blank"><i class="iconfont icon-zhifubao"></i>支付宝登录</a></span>
+					</p>
+					<p class="login-links fr">
+						<a href="https://passport.taobao.com/ac/password_find.htm?spm=a2107.1.0.0.3e3e11d9eHhAtq&from_site=0&login_id=&lang=zh_CN&app_name=&tracelog=signin_main_pass" target="_blank">忘记密码</a>
+						<a href="https://passport.taobao.com/ac/nick_find.htm?spm=a2107.1.0.0.3e3e11d9eHhAtq&from_site=0&lang=zh_CN&app_name=tb" target="_blank">忘记会员名</a>
+						<a href="register.html" target="_blank">免费注册</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 页尾 -->
+	<footer>
+		<div class="anchor-wrap">
+			<!-- 页尾-第一导航 -->
+			<p class="tmall-info">
+				<a href="https://pages.tmall.com/wow/seller/act/zhaoshangproduce?spm=a2240.7829288.a2226n1.1.51634fe5lbh6X8" target="_blank">关于天猫</a>
+				<a href="" target="_blank">帮助中心</a>
+				<a href="" target="_blank">开放平台</a>
+				<a href="" target="_blank">诚聘英才</a>
+				<a href="" target="_blank">联系我们</a>
+				<a href="" target="_blank">网站合作</a>
+				<a href="" target="_blank">法律声明</a>
+				<a href="" target="_blank">隐私权政策</a>
+				<a href="" target="_blank">知识产权</a>
+				<a href="" target="_blank">廉正举报</a>
+			</p>
+			<!-- 页尾-第二导航 -->
+			<p class="other-link">
+				<a href="http://www.alibabagroup.com/cn/global/home?spm=a2240.7829288.a2226n1.12.51634fe5cHFUUt" target="_blank">阿里巴巴集团</a>
+				<a href="https://www.taobao.com/?spm=a2240.7829288.a2226n1.13.51634fe5cHFUUt" target="_blank">淘宝网</a>
+				<a href="https://www.tmall.com/?spm=a2240.7829288.a2226n1.14.51634fe5cHFUUt" target="_blank">天猫</a>
+				<a href="https://ju.taobao.com/?spm=a2240.7829288.a2226n1.15.51634fe5cHFUUt" target="_blank">聚划算</a>
+				<a href="http://www.aliexpress.com/?spm=a2240.7829288.a2226n1.16.51634fe5cHFUUt" target="_blank">全球速卖通</a>
+				<a href="http://www.alibaba.com/?spm=a2240.7829288.a2226n1.17.51634fe5cHFUUt" target="_blank">阿里巴巴国际交易市场</a>
+				<a href="https://www.1688.com/?spm=a2240.7829288.a2226n1.18.51634fe5cHFUUt" target="_blank">1688</a>
+				<a href="https://www.alimama.com/?spm=a2240.7829288.a2226n1.19.51634fe5cHFUUt" target="_blank">阿里妈妈</a>
+				<a href="https://www.fliggy.com/?spm=a2240.7829288.a2226n1.20.51634fe5cHFUUt" target="_blank">飞猪</a>
+				<a href="http://www.aliyun.com/?spm=a2240.7829288.a2226n1.21.51634fe5cHFUUt" target="_blank">阿里云计算</a>
+				<a href="http://www.alios.cn/?spm=a2240.7829288.a2226n1.22.51634fe5cHFUUt" target="_blank">AliOS</a>
+				<a href="" target="_blank">阿里通信</a>
+				<a href="http://www.net.cn/?spm=a2240.7829288.a2226n1.24.51634fe5cHFUUt" target="_blank">万网</a>
+				<a href="http://www.autonavi.com/?spm=a2240.7829288.a2226n1.25.51634fe5cHFUUt" target="_blank">高德</a>
+				<a href="http://www.uc.cn/?spm=a2240.7829288.a2226n1.26.51634fe5cHFUUt" target="_blank">UC</a>
+				<a href="http://www.umeng.com/?spm=a2240.7829288.a2226n1.27.51634fe5cHFUUt" target="_blank">友盟</a>
+				<a href="http://www.xiami.com/?spm=a2240.7829288.a2226n1.28.51634fe5cHFUUt" target="_blank">虾米</a>
+				<a href="http://www.dingtalk.com/?spm=a2240.7829288.a2226n1.29.51634fe5cHFUUt&lwfrom=20150205115110773" target="_blank">钉钉</a>
+				<a href="https://www.alipay.com/" target="_blank">支付宝</a>
+			</p>
+			<!-- 页尾-第三导航 -->
+			<ul class="copyright">
+				<li>增值电信业务经营许可证：<a href="http://www.miibeian.gov.cn/state/outPortal/loginPortal.action" target="_blank">浙B2-20110446</a></li>
+				<li>网络文化经营许可证：<a href="http://sq.ccm.gov.cn/ccnt/sczr/service/business/emark/toDetail/CB964ABC7B904B7BA3472DDF700A2D6D?spm=a2240.7829288.a2226n1.32.51634fe5MqNes6" target="_blank">浙网文[2015]0295-065号</a></li>
+				<li><a href="http://jb.ccm.gov.cn/?spm=a2240.7829288.a2226n1.33.51634fe5MqNes6" target="_blank">12318举报</a></li>
+				<li><a href="https://img.alicdn.com/tfs/TB1EzqZqntYBeNjy1XdXXXXyVXa-2479-1753.jpg" target="_blank">出版物网络交易平台服务经营备案证： 新出发浙备字第001号</a></li>
+				<li>互联网违法和不良信息举报电话：0571-81683755 blxxjb&copy;alibaba-inc.com</li>
+				<li>互联网药品信息服务资质证书编号：<a href="https://img.alicdn.com/tps/TB1vi6vPVXXXXbVXVXXXXXXXXXX-927-653.png" target="_blank">浙-（经营性）-2017-0005</a></li>
+				<li class="set-img"><a href="http://www.beian.gov.cn/portal/registerSystemInfo?spm=a2240.7829288.a2226n1.43.51634fe5MqNes6&recordcode=33010002000120" target="_blank"><img src="assets/images/login-badge.png" alt="">浙公网安备 33010002000120号</a></li>
+				<li class="set-br">（浙）网械平台备字[2018]第00002号</li>
+				<li class="sp">&copy; 2003-2018 TMALL.COM 版权所有</li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>
